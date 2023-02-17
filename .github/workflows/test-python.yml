@@ -28,7 +28,7 @@ jobs:
             coverage run -m pytest --profile ./
       - name: locust
         run: | 
-            locust -f tests/locustfile.py 
+            locust -f tests/locustfile.py --config=./tests/.locust.conf
      
         
       
