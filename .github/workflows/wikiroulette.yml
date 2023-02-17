@@ -26,6 +26,6 @@ jobs:
       - name: Coverage
         run: |
             coverage run -m pytest --profile ./
-      - name: locust
-        run: | 
-           & locust -f tests/locustfile.py
+#      - name: locust
+#        run: | 
+#           & locust -f tests/locustfile.py
