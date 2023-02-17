@@ -23,12 +23,13 @@ jobs:
       - name: Pylint
         run: |
            pylint --exit-zero application/
-      - name: locust
-        run: | 
-            locust -f tests/locustfile.py 
       - name: Coverage
         run: |
             coverage run -m pytest --profile ./
+      - name: locust
+        run: | 
+            locust -f tests/locustfile.py 
+     
         
       
       
